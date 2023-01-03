@@ -1,4 +1,4 @@
-# SELECT
+# 6.SELECT
 
 ### 3.1: Selecting all columns
 
