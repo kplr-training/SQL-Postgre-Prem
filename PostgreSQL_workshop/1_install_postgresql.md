@@ -35,7 +35,7 @@ vérifier l'existence du fichier de configuration ```postgresql.conf```:
 ```sbtshell
 ls /etc/postgresql/12/main/ 
 ```
-Pour voir les commandes que nous pouvons utiliser avec le service postgresql:
+Pour voir les commandes que nous pouvons utiliser avec le service postgresql (start,stop, restart, reload, force-reload, et status)
 ```sbtshell
 service postgresql
 ```
