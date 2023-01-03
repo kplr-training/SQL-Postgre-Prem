@@ -22,7 +22,7 @@ Mettre à jour apt-get:
 ```sbtshell
 sudo apt-get update 
 ```
-Installer postgresql et postgresql-contrib:
+Installer postgresql et postgresql-contrib (un package qui ajoute quelques utilités et fonctionnalités supplémentaires):
 ```sbtshell
 sudo apt-get install postgresql postgresql-contrib
 ```
