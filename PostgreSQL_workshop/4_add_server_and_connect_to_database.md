@@ -12,3 +12,4 @@ Dans Connection > Host name/adress, mettre 127.0.0.1 (remarquer que le port par 
 Mettre votre username et votre mot de passe déjà créés:
 ![image](https://user-images.githubusercontent.com/73080397/210339909-0cb238af-2ce2-46c4-ab22-046dcae117db.png)
 
+Save
