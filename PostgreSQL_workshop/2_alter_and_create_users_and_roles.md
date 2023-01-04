@@ -7,7 +7,7 @@ Voir les bases de données présentes par défaut:
 ```sbtshell
 \l
 ```
-Lister tous les utilisateurs: par défaut, postgres est le seul utilisateur, c'est un superuser, il peut créer les rôlrd, créer les bases de données et effectuer les réplications
+Lister tous les utilisateurs: par défaut, postgres est le seul utilisateur, c'est un superuser, il peut créer les rôles, créer les bases de données et effectuer les réplications
 ```sbtshell
 \du
 ```
