@@ -1,6 +1,5 @@
 ## Support de cours :
-
-
+l
 ## Ressources :
 * Le cours est basé  sur le livre : Getting Started with SQL: A Hands-On Approach for Beginners.
 * Vous pouvez télécharger gratuitement l'Ebook du langage SQL en français par Tony Archambeau ici : https://sql.sh/2143-cours-sql-pdf.
