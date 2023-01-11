@@ -35,6 +35,7 @@ Créer un nouvel utilisateur user_1 (ou votre prénom):
 CREATE USER user_prenom WITH PASSWORD 'votremdp';
 ```
 La commande retourne ```CREATE ROLE```.
+
 Lister les utilisateurs:
 ```
 \du
