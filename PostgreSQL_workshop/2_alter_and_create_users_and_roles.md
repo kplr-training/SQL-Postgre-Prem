@@ -13,21 +13,21 @@ Lister tous les utilisateurs: par défaut, postgres est le seul utilisateur, c'e
 ```
 Changer le mot de passe de l'utilisateur par défaut:
 ```sbtshell
-ALTER USER postgres WITH PASSWORD 'nouveaumdp';
+ALTER USER postgres WITH PASSWORD 'test123';
 ```
 La commande retourne ```ALTER ROLE```.
 Créer un nouvel utilisateur user_1 (ou votre prénom):
 ```sbtshell
-CREATE USER user_1 WITH PASSWORD 'votremdp';
+CREATE USER user_prenom WITH PASSWORD 'votremdp';
 ```
 La commande retourne ```CREATE ROLE```.
 Lister les utilisateurs:
 ```
 \du
 ```
-Fournir certains privilèges à l'utilisateur USER_1:
+Fournir certains privilèges à l'utilisateur user_prenom:
 ```sbtshell
-ALTER USER user_1 WITH SUPERUSER;
+ALTER USER user_prenom WITH SUPERUSER;
 ```
 Créer un autre utilisateur:
 ```sbtshell
