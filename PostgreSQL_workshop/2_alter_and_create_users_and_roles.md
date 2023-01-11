@@ -1,4 +1,4 @@
-# 2.Créer un utilsateur de base de données
+# 2.Créer un utilisateur de base de données
 Dans votre machine Ubuntu, ouvrir le terminal :
 ![open_ubuntu_terminal](https://user-images.githubusercontent.com/73080397/211827531-6ab9276e-5f33-4e7c-b6d7-dc92621f53b5.png)
 
