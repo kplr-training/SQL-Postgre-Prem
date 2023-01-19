@@ -1,4 +1,4 @@
-# 3.Installer pgAdmin
+# 2.0. Installer pgAdmin
 Si vous disposer de Ubuntu Software Center, y aller, chercher 'pgadmin', installer directement. Sinon:
 Dans un nouveau terminal: 
 Installer la clé publique  du repository:
