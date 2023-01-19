@@ -1,4 +1,4 @@
-# 8.DISTINCT et GROUP BY
+# 6.DISTINCT et GROUP BY
 
 8.1 Obtenir les différents noms dans la table **employees**.
 

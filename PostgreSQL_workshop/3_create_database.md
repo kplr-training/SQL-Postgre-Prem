@@ -1,4 +1,4 @@
-# 5.Créer la BDD et les tables
+# 3.Créer la BDD et les tables
 
 * Clic droit sur databases > Create > Database
 * Database : employees > Save

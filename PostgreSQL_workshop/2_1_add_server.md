@@ -1,4 +1,4 @@
-# 4.Ajouter un serveur et se connecter à la base de données
+# 2.1.Ajouter un serveur et se connecter à la base de données
 
 Ouvrir pgAdmin en GUI et définir un Master Password:
 

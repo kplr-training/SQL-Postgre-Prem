@@ -1,4 +1,4 @@
-# 7.COUNT()
+# 5.COUNT()
 
 7.1 Combien d'employés compte l'entreprise ?
 
