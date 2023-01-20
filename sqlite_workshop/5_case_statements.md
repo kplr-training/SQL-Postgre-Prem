@@ -1,6 +1,6 @@
-# 9.CASE Statements
+# 5.CASE Statements
 
-### 6.1 Categorizing Wind Speed
+### 5.1 Categorizing Wind Speed
 
 You can use a `CASE` statement to turn a column value into another value based on conditions. For instance, we can turn different `wind_speed` ranges into `HIGH`, `MODERATE`, and `LOW` categories.
 
@@ -19,7 +19,7 @@ FROM station_data
 ORDER by wind_speed DESC
 ```
 
-### 6.2 More Efficient Way To Categorize Wind Speed
+### 5.2 More Efficient Way To Categorize Wind Speed
 
 We can actually omit `AND wind_speed < 40` from the previous example because each `WHEN`/`THEN` is evaluated from top-to-bottom. The first one it finds to be true is the one it will go with, and stop evaluating subsequent conditions.
 
@@ -35,7 +35,7 @@ END as wind_severity
 FROM station_data
 ```
 
-### 6.3 Using CASE with GROUP BY
+### 5.3 Using CASE with GROUP BY
 
 We can use `GROUP BY` in conjunction with a `CASE` statement to slice data in more ways, such as getting the record count by `wind_severity`.
 
@@ -74,7 +74,7 @@ FROM station_data
 GROUP BY wind_severity
 ```
 
-### 6.4 "Zero/Null" Case Trick
+### 5.4 "Zero/Null" Case Trick
 
 There is really no way to create multiple aggregations with different conditions unless you know a trick with the `CASE` statement. If you want to find two total precipitation, with and without tornado precipitations, for each year and month, you have to do separate queries.
 
@@ -140,7 +140,7 @@ INNER JOIN
 ) non_t
 ```
 
-### 6.5 Using Null in a CASE to conditionalize MIN/MAX
+### 5.5 Using Null in a CASE to conditionalize MIN/MAX
 
 Since `NULL` is ignored in SUM, MIN, MAX, and other aggregate functions, you can use it in a `CASE` statement to conditionally control whether or not a value should be included in that aggregation.
 
@@ -158,7 +158,7 @@ GROUP BY year
 *Switch to slides for exercise*
 
 
-### Exercise 6.1
+### Exercise 5.1
 
 SELECT  the report_code, year, quarter, and temperature, where a “quarter” is “Q1”, “Q2”, “Q3”, or “Q4” reflecting months 1-3, 4-6, 7-9, and 10-12 respectively.
 
@@ -182,7 +182,7 @@ temperature
 FROM STATION_DATA
 ```
 
-### Exercise 6.2
+### Exercise 5.2
 
 Get the average temperature by quarter and month, where a “quarter” is “Q1”, “Q2”, “Q3”, or “Q4” reflecting months 1-3, 4-6, 7-9, and 10-12 respectively.
 
