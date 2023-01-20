@@ -1,7 +1,7 @@
 
-# 10.JOIN
+# 6.JOIN
 
-### 7.1A INNER JOIN
+### 6.1A INNER JOIN
 
 (Refer to slides Section VII)
 
@@ -29,7 +29,7 @@ Joins allow us to keep stored data normalized and simple, but we can get more de
 Notice how two customers are omitted since they don't have any orders (refer to slides).
 
 
-### 7.2B A BAD APPROACH
+### 6.2B A BAD APPROACH
 
 You may come across a style of joining where commas are used to select the needed tables, and a `WHERE` defines the join condition as shown below:
 
@@ -54,7 +54,7 @@ Do not use this approach no matter how much your colleagues use it (and educate 
 
 Using the `INNER JOIN` with an `ON` condition avoids the cartesian product and is more efficient. Therefore, always use that approach.
 
-### 7.2 LEFT OUTER JOIN
+### 6.2 LEFT OUTER JOIN
 
 To include all customers, regardless of whether they have orders, you can use a left outer join via `LEFT JOIN` (refer to slides).
 
@@ -78,7 +78,7 @@ ON CUSTOMER.CUSTOMER_ID = CUSTOMER_ORDER.CUSTOMER_ID
 ```
 
 
-## 7.3 Finding Customers with No Orders
+## 6.3 Finding Customers with No Orders
 
 With a left outer join, you can filter for NULL values on the `CUSTOMER_ORDER` table to find customers that have no orders.
 
@@ -95,7 +95,7 @@ WHERE ORDER_ID IS NULL
 You can use a left outer join to find child records with no parent, or parent records with no children (e.g. a `CUSTOMER_ORDER` with no `CUSTOMER`, or a `CUSTOMER` with no `CUSTOMER_ORDER`s).
 
 
-## 7.4 Joining Multiple Tables
+## 6.4 Joining Multiple Tables
 
 Bring in `PRODUCT` to supply product information for each `CUSTOMER_ORDER`, on top of `CUSTOMER` information.
 
@@ -119,7 +119,7 @@ INNER JOIN PRODUCT
 ON CUSTOMER_ORDER.PRODUCT_ID = PRODUCT.PRODUCT_ID
 ```
 
-## 7.7 Using Expressions with JOINs
+## 6.7 Using Expressions with JOINs
 
 You can use expressions combining any fields on any of the joined tables. For instance, we can now get the total revenue for each customer.
 
@@ -145,7 +145,7 @@ ON CUSTOMER_ORDER.PRODUCT_ID = PRODUCT.PRODUCT_ID
 ```
 
 
-## 7.6 Using GROUP BY with JOINs
+## 6.6 Using GROUP BY with JOINs
 
 You can use `GROUP BY` with a join. For instance, you can find the total revenue for each customer by leveraging all three joined tables, and aggregating the `REVENUE` expression we created earlier.
 
