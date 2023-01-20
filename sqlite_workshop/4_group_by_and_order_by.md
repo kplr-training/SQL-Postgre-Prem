@@ -1,20 +1,20 @@
-# 7.GROUP BY and ORDER BY
+# 4.GROUP BY and ORDER BY
 
 
-### 5.1: Getting a count of records
+### 4.1: Getting a count of records
 
 ```sql
 SELECT count(*) as record_count FROM station_data
 ```
 
-### 5.2 Getting a count of records with a condition
+### 4.2 Getting a count of records with a condition
 
 ```sql
 SELECT count(*) as record_count FROM station_data
 WHERE tornado = 1
 ```
 
-### 5.3 Getting a count by year
+### 4.3 Getting a count by year
 
 ```sql
 SELECT year, count(*) as record_count
@@ -23,7 +23,7 @@ WHERE tornado = 1
 GROUP BY year
 ```
 
-### 5.4 Getting a count by year, month
+### 4.4 Getting a count by year, month
 
 ```sql
 SELECT year, month, count(*) as record_count
@@ -32,7 +32,7 @@ WHERE tornado = 1
 GROUP BY year, month
 ```
 
-### 5.5 Getting a count by year, month with ordinal index
+### 4.5 Getting a count by year, month with ordinal index
 
 ```sql
 SELECT year, month, count(*) as record_count
@@ -41,7 +41,7 @@ WHERE tornado = 1
 GROUP BY 1, 2
 ```
 
-### 5.6 Using ORDER BY
+### 4.6 Using ORDER BY
 
 ```sql
 SELECT year, month, count(*) as record_count
@@ -51,7 +51,7 @@ GROUP BY year, month
 ORDER BY year, month
 ```
 
-### 5.7 Using ORDER BY with DESC
+### 4.7 Using ORDER BY with DESC
 
 ```sql
 SELECT year, month, count(*) as record_count
@@ -61,14 +61,14 @@ GROUP BY year, month
 ORDER BY year DESC, month
 ```
 
-### 5.8 Counting non-null values
+### 4.8 Counting non-null values
 
 ```sql
 SELECT COUNT(snow_depth) as recorded_snow_depth_count
 FROM station_data
 ```
 
-### 5.9 Average temperature by month since year 2000
+### 4.9 Average temperature by month since year 2000
 
 ```sql
 SELECT month, AVG(temperature) as avg_temp
@@ -77,7 +77,7 @@ WHERE year >= 2000
 GROUP BY month
 ```
 
-### 5.10 Average temperature (with rounding) by month since year 2000
+### 4.10 Average temperature (with rounding) by month since year 2000
 
 
 ```sql
@@ -87,7 +87,7 @@ WHERE year >= 2000
 GROUP BY month
 ```
 
-### 5.11 Sum of snow depth
+### 4.11 Sum of snow depth
 
 ```sql
 SELECT year, SUM(snow_depth) as total_snow
@@ -96,7 +96,7 @@ WHERE year >= 2005
 GROUP BY year
 ```
 
-### 5.12 Multiple aggregations
+### 4.12 Multiple aggregations
 
 ```sql
 SELECT year,
@@ -113,7 +113,7 @@ GROUP BY year
 Flip to slides
 
 
-### 5.13 Using HAVING
+### 4.13 Using HAVING
 
 You cannot use WHERE on aggregations. This will result in an error.
 
@@ -148,7 +148,7 @@ HAVING SUM(precipitation) > 30
 ```
 
 
-### 5.14 Getting Distinct values
+### 4.14 Getting Distinct values
 
 You can get DISTINCT values for one or more columns
 
