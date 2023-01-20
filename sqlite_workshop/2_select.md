@@ -1,6 +1,6 @@
-# 6.SELECT
+# 2.SELECT
 
-### 3.1: Selecting all columns
+### 2.1: Selecting all columns
 
 ```sql
 SELECT * FROM CUSTOMER;
@@ -13,13 +13,13 @@ To limit the number of records returned, use a LIMIT. To limit the results to ju
 SELECT * FROM CUSTOMER LIMIT 2;
 ```
 
-### 3.2: Selecting specific columns
+### 2.2: Selecting specific columns
 
 ```sql
 SELECT CUSTOMER_ID, NAME FROM CUSTOMER;
 ```
 
-### 3.3: Expressions
+### 2.3: Expressions
 
 First, select everything from `PRODUCT`
 
@@ -51,7 +51,7 @@ FROM PRODUCT;
 
 **SWITCH TO SLIDES** FOR MATHEMATICAL OPERATORS
 
-### 3.4: Using `round()` Function
+### 2.4: Using `round()` Function
 
 ```sql
 SELECT PRODUCT_ID,
@@ -62,7 +62,7 @@ round(PRICE * 1.07, 2) AS TAXED_PRICE
 FROM PRODUCT;
 ```
 
-### 3.5: Text Concatenation
+### 2.5: Text Concatenation
 
 You can slap a dollar sign to our result using concatenation.
 
@@ -95,7 +95,7 @@ This works with any data types, like numbers, texts, and dates. Also note that s
 **SWITCH TO SLIDES** FOR EXERCISE
 
 
-## 3.6: Comments
+## 2.6: Comments
 
 To make a comments in SQL, use commenting dashes or blocks:
 
