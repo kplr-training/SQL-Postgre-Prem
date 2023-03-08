@@ -1,5 +1,6 @@
 # 8.SUM()
 8.1. Récupérer le montant total que l'entreprise a versé en salaire ?
+
 8.2. Que retourne la requête suivante ? Pourquoi ?
 ```sql
 SELECT SUM(*)
