@@ -1,4 +1,4 @@
-# 5.COUNT()
+# 7.COUNT()
 
 7.1 Combien d'employés compte l'entreprise ?
 ```sql
