@@ -1,5 +1,5 @@
 # 9.Having
-9.1. Récupérer une liste de tous les employés qui ont été employés à partir du 1er janvier 2000.
+9.1. Récupérer tous les employés qui ont été employés à partir du 1er janvier 2000.
 ```sql
 SELECT *
 FROM employees
@@ -11,7 +11,7 @@ SELECT *
 FROM employees
 HAVING hire_date >= '2000-01-01';
 ```
-9.2. Corriger la réponse suivante pour extraire une liste de noms d'employés, où le nombre d'employés est supérieur à 15, en les classant par prénom:
+9.2. Corriger la réponse suivante pour extraire une liste de prénoms d'employés, où le nombre d'employés est supérieur à 15, en les classant par prénom:
 ```sql
 SELECT first_name, COUNT(first_name) as names_count
 FROM employees
@@ -35,7 +35,7 @@ GROUP BY emp_no
 HAVING AVG(salary) > 120000
 ORDER BY emp_no;
 ```
-9.4 Extraire une liste de tous les noms qui ont été rencontrés moins de 200 fois. Les données concernent les personnes embauchées après le 1er janvier 1999.
+9.4 Extraire une liste de tous les prénoms qui ont été rencontrés moins de 200 fois. Les données concernent les personnes embauchées après le 1er janvier 1999.
 ```sql
 SELECT emp_no, first_name, hire_date, COUNT(first_name) AS names_count
 FROM employees
