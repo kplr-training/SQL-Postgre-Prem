@@ -1,9 +1,9 @@
-8.1 Selectionner tous les prénoms dans la table employees.
+8.1 Selectionner tous les prénoms dans la table **employees**.
 ```sql
 SELECT first_name
 FROM employees;
 ````
-8.2 Obtenir le prénom (first name) dans la table employees et regrouper par prénom.
+8.2 Obtenir le prénom (first name) dans la table **employees** et regrouper par prénom.
 ```sql
 SELECT first_name
 FROM employees
