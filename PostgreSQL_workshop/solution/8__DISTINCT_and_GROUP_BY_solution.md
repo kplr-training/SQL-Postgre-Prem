@@ -1,3 +1,5 @@
+# DISTINCT et GROUP BY
+
 8.1 Selectionner tous les prénoms dans la table **employees**.
 ```sql
 SELECT first_name
