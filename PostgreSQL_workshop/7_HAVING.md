@@ -1,6 +1,7 @@
 # 7.Having
 7.1. Récupérer une liste de tous les employés qui ont été employés à partir du 1er janvier 2000.
-Ceci produit le même résultat :
+
+Cela produira-t-il le même résultat ? :
 ```sql
 SELECT *
 FROM employees
